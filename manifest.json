@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Preload Questionable Content",
+    "description": "Preload the next Questionable Content comic while looking at the current one",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": ["https://questionablecontent.net/*"],
+            "js": ["preload-questionablecontent.js"]
+        }
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "preload-questionablecontent@lucaswerkmeister.de"
+        }
+    }
+}
